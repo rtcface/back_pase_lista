@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: Optional[int] = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
     #CORS
     CORS_ALLOWED_ORIGINS: Optional[str] = os.getenv("CORS_ALLOWED_ORIGINS")
+    #os.getenv("CORS_ALLOWED_ORIGINS")
     #DatabasePostgres
     POSTGRES_USER: Optional[str] = os.getenv("POSTGRES_USER")
     POSTGRES_PASSWORD: Optional[str] = os.getenv("POSTGRES_PASSWORD")
